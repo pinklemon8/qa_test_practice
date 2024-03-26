@@ -1,0 +1,8 @@
+# created by virtualenv automatically
+* chromedriver_authoinstaller.method.py
+.venv/*
+.idea/*
+pytest.ini
+
+
+
