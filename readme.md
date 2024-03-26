@@ -1,2 +1,2 @@
-## la la land
-# test website: https://www.saucedemo.com
+# homework for automated testing
+## test website: https://www.saucedemo.com
