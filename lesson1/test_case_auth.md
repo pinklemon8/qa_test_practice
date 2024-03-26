@@ -1,6 +1,6 @@
-[//]: # (Авторизация)
+[//]: # (Authorisation)
 
-[//]: # (I. Авторизация используя корректные данные &#40;standard_user, secret_sauce&#41;)
+[//]: # (I. Use data: 'standard_user, secret_sauce' for authorisation)
 1. open url: https://www.saucedemo.com/v1/
 2. enter login "standart_user"
 3. enter password "secret_sauce"
