@@ -3,6 +3,7 @@
 .venv/*
 .idea/*
 pytest.ini
+lesson1/__pycache__/
 
 
 
