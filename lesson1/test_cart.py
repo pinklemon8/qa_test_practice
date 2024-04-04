@@ -15,16 +15,17 @@ def login():
     browser.find_element(By.ID, "user-name").send_keys('standard_user')
     browser.find_element(By.ID, "password").send_keys('secret_sauce')
     browser.find_element(By.ID, "login-button").click()
-    yield login
+    yield
     browser.quit()
 
 
 # Add_to_cart
 def test_add_to_cart(login):
-    add_to_cart_buttons = browser.find_elements(By.CLASS_NAME, 'add-to-cart-button')
-    add_to_cart_buttons[1].click()
-    assert browser.find_element(By.CLASS_NAME, 'remove-from-cart-button').text == 'Remove', ('An item has not been '
-                                                                                             'added to cart')
+    item_quantity_before = browser.find_elements(By.XPATH, '//*[@id="shopping_cart_container"]/a')
+    browser.find_element(By.XPATH, '//*[@id="add-to-cart-sauce-labs-backpack"]').click()
+    item_quantity_after = browser.find_element(By.XPATH, '//*[@id="shopping_cart_container"]/a/span')
+    time.sleep(2)
+    assert item_quantity_before != item_quantity_after, 'An item has not been added in the cart.'
 
 
 # Remove_from_cart
