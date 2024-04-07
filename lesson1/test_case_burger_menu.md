@@ -15,4 +15,4 @@ Burger menu
 1. Авторизуемся с использованием Username: standard_login and Password: secret_sauce
 2. Нажимаем на кнопку бургер меню
 3. Нажимаем на кнопку Reset App State
-4. Проверяем, что мы перешли на начальный url: https://www.saucedemo.com/
+4. Проверяем, что все данные, связанные с нашей текущей сессии сброшены
