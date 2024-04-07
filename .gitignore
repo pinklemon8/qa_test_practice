@@ -1,9 +1,9 @@
-# created by virtualenv automatically
-* chromedriver_authoinstaller.method.py
 .venv/*
 .idea/*
 pytest.ini
 lesson1/__pycache__/
+.pytest_cache
+exceptions.py
 
 
 
