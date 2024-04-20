@@ -1,15 +1,11 @@
 import pytest
 from selenium import webdriver
 
-browser = webdriver.Chrome()
-url = 'https://www.saucedemo.com/'
-catalog = 'https://www.saucedemo.com/inventory.html'
 
-
-@pytest.fixture()
-def auth():
+@pytest.fixture(scope="function")
+def browser():
     print("\nstart browser for test..")
-    browser.get(url)
+    browser = webdriver.Chrome()
     yield browser
     print("\nquit browser..")
     browser.quit()

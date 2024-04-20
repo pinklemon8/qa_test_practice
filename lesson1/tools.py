@@ -8,7 +8,7 @@ url = 'https://www.saucedemo.com/'
 catalog = 'https://www.saucedemo.com/inventory.html'
 
 
-@pytest.fixture()  # Authorization fixture
+@pytest.fixture  # Authorization fixture
 def login():
     browser.get(url)
     browser.find_element(By.ID, "user-name").send_keys('standard_user')
@@ -16,3 +16,4 @@ def login():
     browser.find_element(By.ID, "login-button").click()
     time.sleep(2)
     yield login
+    browser.quit()

@@ -21,4 +21,12 @@ def test_button_about(login):
 
 
 # reset session
+@pytest.mark.xfail(reason="fixing this bug right now")
+def test_reset_session():
+    pass
 
+
+'''к маркировке xfail можно добавлять параметр reason. Чтобы увидеть это сообщение в консоли, при запуске нужно
+добавлять параметр pytest -rx:
+pytest lesson1/test_burger_menu.py -rx -s -v --tb=line
+'''
